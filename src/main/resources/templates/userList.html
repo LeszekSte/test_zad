@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Title</title>
+</head>
+<body>
+<h1 th:text="${opisKlienta}">brak klienta</h1>
+<p th:text="|Imię - ${klient.get(1).fName}, Nazwisko -  ${klient.get(0).lName}|">brak Imienia</p>
+
+<h1>Lista Klientów</h1>
+<ol>
+    <li th:each="user:${klient}"
+        th:text="|${user.fName} ${user.lName} ${user.opis}|">
+    </li>
+    <p><a href="/">Strona główna </a> </p>
+</ol>
+</body>
+</html>

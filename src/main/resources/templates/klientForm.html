@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thyemleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz Nowy klient</title>
+</head>
+<body>
+<form th:action="@{/dodaj}" method="post" th:object="${klient}">
+    <input type="text" th:field="*{fName}"placeholder="Podaj imię"><br>
+    <input type="text" th:field="*{lName}"placeholder="Podaj nazwisko"><br>
+    <textarea name="OPIS" placeholder="Opis" th:field="*{opis}"></textarea><br>
+    <button type="submit">Zapisz</button>
+</form>
+
+
+<!--<form action="/dodaj" method="post">-->
+    <!--<input name="fName" placeholder="Imię &#45;&#45;"><br>-->
+    <!--<input name="lName" placeholder="Nazwisko"><br>-->
+    <!--<button type="submit">Dodaj Klienta</button>-->
+<!--</form>-->
+
+</body>
+</html>

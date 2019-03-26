@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Thymeleaf-Title</title>
+</head>
+<body>
+    <h1 th:text="|Dodawanie ${2+7} lub 3+3 = ${3+30}|"> tekst podgląd</h1>
+    <h1 th:text="|Dodawanie ${6+21} lub 373 = ${3+30}|">
+            tekst podgląd    </h1>
+
+    <p th:text="${model1}"> brak obiektu</p>
+</body>
+</html>
